@@ -6,7 +6,7 @@ gulp.task('hello', function(){
 });
 
 gulp.task('sass', function(){
-  return gulp.src('./scss/style.scss')
+  return gulp.src('./scss/**/*.scss')
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('./css'))
 });

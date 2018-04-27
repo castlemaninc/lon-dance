@@ -48,6 +48,10 @@ table {
 .main-nav {
   display: flex; }
 
+@media only screen and (min-device-width: 768px) {
+  .small-device-nav-link {
+    display: block; } }
+
 * {
   text-decoration: none; }
 
@@ -79,6 +83,9 @@ nav li {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
+
+.small-device-nav-link {
+  display: none; }
 
 .section-heading {
   font-family: "Lora", serif; }

@@ -1,3 +1,34 @@
-p {
-	color: red;
+@import 'reset', 'flexbox';
+
+$Lora: 'Lora', serif;
+$Os: 'Open Sans', sans-serif;
+
+* {
+	text-decoration: none;
 }
+
+a {
+	cursor: pointer;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1em; }
+h6 { font-size: .8em; }
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+	font-family: $Os;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-heading {
+	font-family: $Lora;
+}
+

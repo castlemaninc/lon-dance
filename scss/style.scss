@@ -104,6 +104,10 @@ section {
 
 
 .about-us {
+
+	padding-left: 2%;
+	padding-right: 2%;
+
 	.section-heading {		
 		text-align:center;
 	}
@@ -152,6 +156,30 @@ section {
 	}
 }
 
+.contact-us {
+	form {
+
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+
+		#first-name, #last-name, #tel, #email {
+			margin-top: 10px;
+			padding: 10px;			
+		}
+
+		#textarea {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			margin-top: 10px;
+			width: 100%;
+		}
+		
+	}
+}
 
 
 

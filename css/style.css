@@ -46,7 +46,15 @@ table {
   border-spacing: 0; }
 
 .main-nav {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.left-nav-links, .right-nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 @media only screen and (min-device-width: 768px) {
   .small-device-nav-link {
@@ -79,10 +87,42 @@ h6 {
 ul {
   list-style-type: none; }
 
+body {
+  background-image: url("../images/AdobeStock_78465714_Preview.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh; }
+
+.main-header {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+
+.main-nav {
+  height: 130px; }
+
 nav li {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 5px 20px;
+  color: orange; }
+  nav li:hover {
+    background-color: orange;
+    color: black; }
+
+.logo {
+  width: 120px;
+  font-family: "Lora", serif;
+  text-align: center; }
+
+.hero-container {
+  width: 100%;
+  padding: 5%; }
+
+.video {
+  width: 60%;
+  filter: blur(0); }
 
 .small-device-nav-link {
   display: none; }

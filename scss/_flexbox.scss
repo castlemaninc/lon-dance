@@ -1,3 +1,17 @@
 .main-nav {
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items:center;
 }
+
+.left-nav-links, .right-nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+
+
+

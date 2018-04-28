@@ -87,16 +87,25 @@ h6 {
 ul {
   list-style-type: none; }
 
+.wrapper {
+  position: relative; }
+
+.sticky {
+  position: fixed;
+  top: 0; }
+
 body {
-  background-image: url("../images/AdobeStock_78465714_Preview.jpeg");
+  /*background-image: url("../images/AdobeStock_78465714_Preview.jpeg");*/
+  background-color: darkorange;
   background-repeat: no-repeat;
-  background-size: 100% 100vh; }
+  background-size: 100% auto;
+  background-position: center 130px; }
 
 .main-header {
   background-color: white;
-  position: absolute;
   width: 100%;
-  z-index: 1; }
+  z-index: 2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .main-nav {
   height: 130px; }
@@ -112,11 +121,12 @@ nav li {
     color: black; }
 
 .logo {
-  width: 120px;
+  width: auto;
   font-family: "Lora", serif;
   text-align: center; }
 
 .hero-container {
+  margin-top: 130px;
   width: 100%;
   padding: 5%; }
 

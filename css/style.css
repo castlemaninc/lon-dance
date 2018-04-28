@@ -56,6 +56,20 @@ table {
   flex-direction: row;
   justify-content: center; }
 
+.instructors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.services-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.service-card {
+  display: flex;
+  justify-content: center; }
+
 @media only screen and (min-device-width: 768px) {
   .small-device-nav-link {
     display: block; } }
@@ -101,6 +115,9 @@ body {
   background-size: 100% auto;
   background-position: center 130px; }
 
+p {
+  font-family: "Lora", serif; }
+
 .main-header {
   background-color: white;
   width: 100%;
@@ -109,6 +126,9 @@ body {
 
 .main-nav {
   height: 130px; }
+
+.small-device-nav-link {
+  display: none; }
 
 nav li {
   font-family: "Open Sans", sans-serif;
@@ -134,8 +154,46 @@ nav li {
   width: 60%;
   filter: blur(0); }
 
-.small-device-nav-link {
-  display: none; }
+section {
+  margin-top: 20px;
+  padding-left: 2%;
+  padding-right: 2%; }
+  section .section-heading {
+    font-family: "Lora", serif;
+    text-align: center;
+    margin-bottom: 20px; }
 
-.section-heading {
-  font-family: "Lora", serif; }
+.about-us .section-heading {
+  text-align: center; }
+
+.about-us .instructor-card {
+  margin: 15px; }
+
+.about-us .instructor-name {
+  text-transform: uppercase;
+  padding: 8px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.services .services-card-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; }
+
+.services .services-card {
+  margin: 20px 30px;
+  max-width: 200px;
+  min-width: 200px;
+  text-align: center; }
+  .services .services-card .service-heading {
+    text-transform: uppercase;
+    padding: 8px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+
+.location .map {
+  background-color: white;
+  width: 80%;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto; }

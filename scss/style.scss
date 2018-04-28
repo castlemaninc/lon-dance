@@ -41,6 +41,9 @@ body {
     background-position: center 130px;
 }
 
+p {
+	font-family: $Lora;
+}
 
 .main-header {	
 	background-color: white;	
@@ -51,6 +54,10 @@ body {
 
 .main-nav {
 	height: 130px;	
+}
+
+.small-device-nav-link {
+	display: none;
 }
 
 nav li {
@@ -72,8 +79,7 @@ nav li {
 	text-align: center;
 }
 
-.hero-container {
-	
+.hero-container {	
 	margin-top: 130px;	
 	width: 100%;
 	padding: 5%;    
@@ -84,12 +90,69 @@ nav li {
 	filter: blur(0); 
 }
 
+section {
+	margin-top: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
 
-.small-device-nav-link {
-	display: none;
+	.section-heading {
+		font-family: $Lora;
+		text-align: center;
+		margin-bottom: 20px;
+	}	
 }
 
-.section-heading {
-	font-family: $Lora;
+
+.about-us {
+	.section-heading {		
+		text-align:center;
+	}
+
+	.instructor-card {
+		margin: 15px;
+
+	}
+
+	.instructor-name {
+		text-transform: uppercase;
+		padding: 8px 0px;
+		font-family: $Os;
+		font-weight: 700;
+	}
 }
+
+.services {
+	.services-card-container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	.services-card {
+		margin: 20px 30px;
+		max-width: 200px;
+		min-width: 200px;		
+		text-align: center;
+
+		.service-heading {
+			text-transform: uppercase;
+			padding: 8px 0px;
+			font-family: $Os;
+			font-weight: 700;
+		}
+	}
+}
+
+.location {
+	.map {
+		background-color: white;
+		width: 80%;
+		padding: 2%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+
 

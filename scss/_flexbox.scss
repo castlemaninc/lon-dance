@@ -11,6 +11,24 @@
 	justify-content: center;
 }
 
+.instructors-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.services-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.service-card {
+	display: flex;
+	justify-content: center;
+}
+
 
 
 

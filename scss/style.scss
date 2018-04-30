@@ -1,16 +1,30 @@
-@import 'reset', 'flexbox';
+@import 'reset';
+@import 'flexbox';
 @import 'media-queries';
+
 
 $Lora: 'Lora', serif;
 $Os: 'Open Sans', sans-serif;
 $shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
+$red1: #BF0426;
+$red2: #E0142F;
+$blue1: #244276;
+$blue2: #5F7C9C;
+$white1: #F2F2F2;
+
+
 * {
 	text-decoration: none;
 }
 
+body {
+	background-color: #fff;
+}
+
 a {
 	cursor: pointer;
+	color: white;
 }
 
 h1 { font-size: 3em; }
@@ -33,20 +47,13 @@ ul {
   top: 0;  
 }
 
-body {
-	/*background-image: url("../images/AdobeStock_78465714_Preview.jpeg");*/
-	background-color: darkorange;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center 130px;
-}
 
 p {
 	font-family: $Lora;
 }
 
 .main-header {	
-	background-color: white;	
+	background-color: #fff;	
 	width: 100%;
 	z-index: 2;
 	box-shadow: $shadow1;
@@ -65,16 +72,18 @@ nav li {
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 5px 20px;
-	color: orange;
+	color: $red2;
 
 	&:hover{
-		background-color: orange;
+		background-color: $red2;
 		color: black;
 	}
 }
 
 .logo {
 	width: auto;
+	margin-left: 1%;
+	margin-right: 1%;
 	font-family: $Lora;
 	text-align: center;
 }
@@ -91,19 +100,31 @@ nav li {
 }
 
 section {
-	margin-top: 20px;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding: 3% 2%;
 
 	.section-heading {
 		font-family: $Lora;
 		text-align: center;
 		margin-bottom: 20px;
+	}
+
+	p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.section-description {
+		width: 40%;
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 4%;	
 	}	
 }
 
 
 .about-us {
+
+	background: linear-gradient(#ddd, #fff);
 
 	padding-left: 2%;
 	padding-right: 2%;
@@ -113,7 +134,12 @@ section {
 	}
 
 	.instructor-card {
+		width: 200px;
 		margin: 15px;
+
+		.instructor-card-details {
+			line-height: 1.5em;
+		}
 
 	}
 
@@ -146,7 +172,12 @@ section {
 	}
 }
 
+.contact-us, .location {
+	background-image: url(../images/agsquare/agsquare.png);
+}
+
 .location {
+
 	.map {
 		background-color: white;
 		width: 80%;
@@ -182,6 +213,25 @@ section {
 	}
 }
 
+footer {
+	
+	background-color: $blue2;
+	padding: 80px;
 
+	.footer-content {
 
+		min-width: 40%;
+
+		.social-wrapper {
+			min-width: 30%;
+		}
+	}
+
+	.footer-heading {
+		font-family: $Lora;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+}
 

@@ -124,7 +124,8 @@ section {
 
 .about-us {
 
-	background: linear-gradient(#ddd, #fff);
+	background: linear-gradient(#ddd, 30%, #fff);
+
 
 	padding-left: 2%;
 	padding-right: 2%;
@@ -134,10 +135,17 @@ section {
 	}
 
 	.instructor-card {
+		
+		background: #fff;
+
+
 		width: 200px;
 		margin: 15px;
 
 		.instructor-card-details {
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 10%;
 			line-height: 1.5em;
 		}
 

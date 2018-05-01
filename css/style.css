@@ -331,9 +331,27 @@ footer {
     display: none; }
   .small-nav {
     display: flex;
-    height: 130px;
+    height: 90px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
     .small-nav .bars {
-      padding: 40px; } }
+      padding: 35px; }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    padding: 2%;
+    align-items: center; }
+    .hero-container .video {
+      width: 100%; }
+    .hero-container .hero-content {
+      padding: 5%;
+      width: 60%; }
+  .contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
+    .contact-us form #first-name, .contact-us form #last-name, .contact-us form #tel, .contact-us form #email, .contact-us form #textarea {
+      width: 100%; } }

@@ -81,7 +81,7 @@ p {
 	width: 100%;
 	z-index: 2;
 	/*box-shadow: $shadow1;*/
-	
+
 }
 
 .main-nav {
@@ -124,9 +124,12 @@ nav li {
 
 .hero-content {
 	text-align: center;
-	line-height: 2em;
-	
+	line-height: 2em;	
 	font-family: $Os;
+
+	span {
+		text-decoration: underline;
+	}
 
 	.phone {
 		color: $blue1;
@@ -235,6 +238,15 @@ section {
 			font-weight: 700;
 		}
 	}
+
+	.service-description {
+		line-height: 1.5em;
+	}
+
+	.learn-more {
+		color: $red1;
+		font-weight: 700;
+	}
 }
 
 .studio-rental {
@@ -285,6 +297,8 @@ section {
 			grid-column-end: 3;
 			margin-top: 10px;
 			width: 100%;
+			padding: 10px;
+
 		}
 		
 	}

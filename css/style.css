@@ -192,6 +192,8 @@ nav li {
   text-align: center;
   line-height: 2em;
   font-family: "Open Sans", sans-serif; }
+  .hero-content span {
+    text-decoration: underline; }
   .hero-content .phone {
     color: #244276; }
   .hero-content .thirty {
@@ -262,6 +264,13 @@ section {
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
 
+.services .service-description {
+  line-height: 1.5em; }
+
+.services .learn-more {
+  color: #BF0426;
+  font-weight: 700; }
+
 .studio-rental .studio-rental-reasons {
   text-align: center;
   list-style-type: square;
@@ -292,7 +301,8 @@ section {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 10px;
-    width: 100%; }
+    width: 100%;
+    padding: 10px; }
 
 footer {
   background-color: #5F7C9C;

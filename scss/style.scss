@@ -39,7 +39,7 @@ ul {
 }
 
 .button {
-	background-color: $blue1;
+	background-color: $red2;
 	color: white;
 	font-family: $Os;
 	text-transform: uppercase;
@@ -53,7 +53,7 @@ ul {
 	border-radius: 4px;
 
 	&:hover {
-		background-color: $blue2;
+		background-color: $red1;
 
 	}
 
@@ -100,7 +100,8 @@ nav li {
 
 	&:hover{
 		background-color: $red2;
-		color: $white1;
+		color: black;
+
 	}
 }
 
@@ -118,6 +119,26 @@ nav li {
 	grid-template-rows: 90% 1fr;
 	margin-top: 130px;	
 	padding: 5%;    
+}
+
+.hero-content {
+	text-align: center;
+	line-height: 2em;
+	
+	font-family: $Os;
+
+	.phone {
+		color: $blue1;
+	}
+
+	.thirty {
+		font-style: italic;
+	}
+
+	.free {
+		color: $red1;
+		font-weight: 700;
+	}	
 }
 
 .video {

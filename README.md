@@ -13,3 +13,5 @@ Two gulp tasks were written:
 I utilized various features of Sass: 
 	- Partials
 	- Variables
+4. jQuery
+I wrote a function to add a css property when a user scrolls down. 

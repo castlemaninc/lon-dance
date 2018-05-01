@@ -56,6 +56,14 @@ table {
   flex-direction: row;
   justify-content: center; }
 
+.hero-content {
+  display: flex;
+  flex-direction: column; }
+
+.down-arrow-container {
+  display: flex;
+  justify-content: center; }
+
 .instructors-container {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +100,7 @@ body {
 
 a {
   cursor: pointer;
-  color: white; }
+  color: inherit; }
 
 h1 {
   font-size: 3em; }
@@ -114,6 +122,23 @@ h6 {
 
 ul {
   list-style-type: none; }
+
+.button {
+  background-color: #244276;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  padding: 1% 3%;
+  height: 40px;
+  line-height: 40px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px; }
+  .button:hover {
+    background-color: #5F7C9C; }
+  .button:active {
+    box-shadow: none; }
 
 .wrapper {
   position: relative; }
@@ -142,10 +167,10 @@ nav li {
   text-transform: uppercase;
   font-weight: 700;
   padding: 5px 20px;
-  color: #E0142F; }
+  color: #BF0426; }
   nav li:hover {
     background-color: #E0142F;
-    color: black; }
+    color: #F2F2F2; }
 
 .logo {
   width: auto;
@@ -155,13 +180,21 @@ nav li {
   text-align: center; }
 
 .hero-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 90% 1fr;
   margin-top: 130px;
-  width: 100%;
   padding: 5%; }
 
 .video {
-  width: 60%;
-  filter: blur(0); }
+  width: 90%; }
+
+.down-arrow-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 3%; }
+  .down-arrow-container .down-arrow {
+    color: #ddd; }
 
 section {
   padding: 3% 2%; }
@@ -215,6 +248,12 @@ section {
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
 
+.studio-rental .studio-rental-reasons {
+  text-align: center;
+  list-style-type: square;
+  width: 50%;
+  text-align: left; }
+
 .contact-us, .location {
   background-image: url(../images/agsquare/agsquare.png); }
 
@@ -244,6 +283,8 @@ section {
 footer {
   background-color: #5F7C9C;
   padding: 80px; }
+  footer a {
+    color: white; }
   footer .footer-content {
     min-width: 40%; }
     footer .footer-content .social-wrapper {

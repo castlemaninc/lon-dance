@@ -80,8 +80,6 @@ p {
 	background-color: #fff;	
 	width: 100%;
 	z-index: 2;
-	/*box-shadow: $shadow1;*/
-
 }
 
 .main-nav {
@@ -102,7 +100,6 @@ nav li {
 	&:hover{
 		background-color: $red2;
 		color: black;
-
 	}
 }
 
@@ -129,6 +126,8 @@ nav li {
 
 	span {
 		text-decoration: underline;
+		color: $blue1;
+
 	}
 
 	.phone {
@@ -155,7 +154,11 @@ nav li {
 	padding: 3%;
 
 	.down-arrow {
-		color: #ddd;				
+		color: #ddd;
+
+		&:hover {
+			color: #ccc;
+		}				
 	}
 }
 

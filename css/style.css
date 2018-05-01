@@ -155,8 +155,7 @@ p {
 .main-header {
   background-color: #fff;
   width: 100%;
-  z-index: 2;
-  /*box-shadow: $shadow1;*/ }
+  z-index: 2; }
 
 .main-nav {
   height: 130px; }
@@ -193,7 +192,8 @@ nav li {
   line-height: 2em;
   font-family: "Open Sans", sans-serif; }
   .hero-content span {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #244276; }
   .hero-content .phone {
     color: #244276; }
   .hero-content .thirty {
@@ -211,6 +211,8 @@ nav li {
   padding: 3%; }
   .down-arrow-container .down-arrow {
     color: #ddd; }
+    .down-arrow-container .down-arrow:hover {
+      color: #ccc; }
 
 section {
   padding: 3% 2%; }

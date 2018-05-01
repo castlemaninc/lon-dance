@@ -86,6 +86,10 @@ p {
 	height: 130px;	
 }
 
+.small-nav {
+	display: none;
+}
+
 .small-device-nav-link {
 	display: none;
 }
@@ -333,3 +337,21 @@ footer {
 	
 }
 
+@media only screen and (max-width: 1024px) {
+    .main-nav {
+    	display: none;
+    }
+
+    .small-nav {
+    	display: flex;
+    	height: 130px;
+    	flex-direction: row;
+    	justify-content: space-around;
+    	align-items: center;
+
+    	.bars {    		
+    		padding: 40px;
+    	}
+    }
+
+}

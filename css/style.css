@@ -90,6 +90,9 @@ footer {
   .social-wrapper a {
     margin: 7px; }
 
+.small-nav {
+  justify-content: space-around; }
+
 @media only screen and (min-device-width: 768px) {
   .small-device-nav-link {
     display: block; } }
@@ -159,6 +162,9 @@ p {
 
 .main-nav {
   height: 130px; }
+
+.small-nav {
+  display: none; }
 
 .small-device-nav-link {
   display: none; }
@@ -319,3 +325,15 @@ footer {
     font-family: "Lora", serif;
     text-align: center;
     margin-bottom: 20px; }
+
+@media only screen and (max-width: 1024px) {
+  .main-nav {
+    display: none; }
+  .small-nav {
+    display: flex;
+    height: 130px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .small-nav .bars {
+      padding: 40px; } }

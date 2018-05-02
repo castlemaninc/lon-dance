@@ -258,14 +258,15 @@ section {
 
 .studio-rental {
 
-
+	background-color: $red1;
 
 	.studio-rental-reasons {
 		text-align: center;
-		list-style-type: square;
-		width: 50%;
-		text-align: left;
-	}	
+		font-family: $Os;
+		line-height: 1.5em;
+
+	}
+	
 }
 
 .contact-us, .location {
@@ -290,13 +291,41 @@ section {
 			margin: 30px 0px;
 		}
 
-
 		address {
 			font-size: 1.1em;
-
 		}
 	}
 
+}
+
+.hours {
+	
+	line-height: 1.4em;	
+	
+	table {
+		font-size: 1.2em;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		width: auto;
+
+		tr:nth-child(even){background-color: #f2f2f2;}
+
+		.last-lesson-booked {
+			font-style: italic;
+			font-weight: 700;
+		}
+
+		th {
+			font-weight: 700;
+		}
+
+		td, th {
+			
+    		padding: 8px;
+		}
+	}	
 }
 
 .contact-us {
@@ -323,10 +352,31 @@ section {
 			padding: 10px;
 
 		}
+
+		#submit {
+			margin-top: 15px;
+			width: 100px;
+			background-color: $red2;
+			border: 0;
+			padding: 10px;
+			color: white;
+			border-radius: 4px;
+			box-shadow: $shadow1;
+
+			&:hover {
+				background-color: $red1;
+			}
+		}
 		
 	}
 }
 
+.address {	
+
+	address .directions {
+		font-style: italic;
+	}
+}
 
 
 footer {
@@ -356,6 +406,14 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+		
+	h1 { font-size: 2.4em; }
+	h2 { font-size: 2em; }
+	h3 { font-size: 1.44em; }
+	h4 { font-size: 1.12em; }
+	h5 { font-size: 1em; }
+	h6 { font-size: .8em; }
+
     .main-nav {
     	display: none;
     }
@@ -364,8 +422,12 @@ footer {
     	display: flex;
     	height: 90px;
     	flex-direction: row;
-    	justify-content: space-around;
+    	justify-content: space-between;
     	align-items: center;
+
+    	.spacer {
+    		padding: 35px;
+    	}
 
     	.bars {    		
     		padding: 35px;
@@ -386,6 +448,7 @@ footer {
     	.hero-content {
     		padding: 5%;
     		width: 60%;
+    		min-height: 400px;
     	}    	
     }
 
@@ -397,6 +460,10 @@ footer {
 
     	#first-name, #last-name, #tel, #email, #textarea {
     		width: 100%;
+    	}
+
+    	#submit {
+    		width: 140px;
     	}
     }
 

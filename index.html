@@ -26,7 +26,7 @@
 				</ul>				
 			</nav>
 			<nav class="small-nav">
-				<div></div>
+				<div class="spacer"></div>
 				<div class="logo"><h2>LonDance</h2></div>
 				<a href="#" class="bars">
 					<i class="fas fa-bars fa-lg"></i>
@@ -166,7 +166,7 @@
 			</div>
 		</section>
 		<section class="studio-rental">
-			<div>
+			<div class="studio-rental-content">
 				<h1 class="section-heading">Studio Rental</h1>
 				<ul class="studio-rental-reasons">
 					<li>Small Wedding Receptions</li>
@@ -179,7 +179,33 @@
 				</ul>
 			</div>
 		</section>
-		<section class="hours"></section>
+		<section class="hours">
+			<h1 class="section-heading">Hours</h1>
+			<table>
+				<tr>
+				    <th>Days</th>
+				    <th>From</th> 
+				    <th>To</th>
+			  	</tr>
+			  	<tr>
+			  		<td>Monday through Friday</td>
+			  		<td>11:00 am</td>
+			  		<td>10:00 pm</td>
+			  	</tr>
+			  	<tr>
+			  		<td class="last-lesson-booked">( Last Lesson Booked at 9:15pm )</td>			  		
+			  	</tr>
+			  	<tr>
+			  		<td>Saturday</td>
+			  		<td>11:00 am</td>
+			  		<td>4:00 pm</td>
+			  	</tr>
+			  	<tr>
+			  		<td>Sunday</td>
+			  		<td>By Appointment</td>			  		
+			  	</tr>			  	
+			</table>
+		</section>
 		<section class="contact-us">
 			<h1 class="section-heading">Contact Us</h1>
 			<form>				
@@ -188,6 +214,7 @@
     			<input type="tel" id="tel" name="phone" placeholder="PHONE">
     			<input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
     			<textarea id="textarea" rows="10" cols="50" name="message"></textarea>
+    			<input id="submit" type="submit" value="SUBMIT">
 			</form>
 		</section>
 		<section class="location">
@@ -198,8 +225,8 @@
 			<div class="address">
 				<h2 class="address-heading">Our Address</h2>
 				<address>
-					27261 La Paz Rd.,Ste J<br>Laguna Niguel, CA 92677<br><a class="phone" href="tel:949-448-7955"><br><p><i class="fas fa-mobile-alt"></i> 949-448-7955</p></a><br>
-					Corner of Pacific Park &amp; La Paz Rd.<br>(In the Plaza de La Paz Shopping Center Next to Sprout's.)
+					<span class="street-address">27261 La Paz Rd., Ste J<br>Laguna Niguel, CA 92677</span><br><a class="phone" href="tel:949-448-7955"><br><p><i class="fas fa-mobile-alt"></i> 949-448-7955</p></a><br>
+					Corner of Pacific Park &amp; La Paz Rd.<br><span class="directions">(In the Plaza de La Paz Shopping Center Next to Sprout's.)</span>
 				</address>
 				<br>
 				<a class="button"><h5>Get Directions</h5></a>

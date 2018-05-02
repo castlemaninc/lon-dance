@@ -288,11 +288,12 @@ section {
   color: #BF0426;
   font-weight: 700; }
 
-.studio-rental .studio-rental-reasons {
-  text-align: center;
-  list-style-type: square;
-  width: 50%;
-  text-align: left; }
+.studio-rental {
+  background-color: #BF0426; }
+  .studio-rental .studio-rental-reasons {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5em; }
 
 .contact-us, .location {
   background-image: url(../images/agsquare/agsquare.png); }
@@ -312,6 +313,25 @@ section {
   .location .address address {
     font-size: 1.1em; }
 
+.hours {
+  line-height: 1.4em; }
+  .hours table {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: auto; }
+    .hours table tr:nth-child(even) {
+      background-color: #f2f2f2; }
+    .hours table .last-lesson-booked {
+      font-style: italic;
+      font-weight: 700; }
+    .hours table th {
+      font-weight: 700; }
+    .hours table td, .hours table th {
+      padding: 8px; }
+
 .contact-us form {
   display: grid;
   grid-column-gap: 1%;
@@ -328,6 +348,20 @@ section {
     margin-top: 10px;
     width: 100%;
     padding: 10px; }
+  .contact-us form #submit {
+    margin-top: 15px;
+    width: 100px;
+    background-color: #E0142F;
+    border: 0;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .contact-us form #submit:hover {
+      background-color: #BF0426; }
+
+.address address .directions {
+  font-style: italic; }
 
 footer {
   background-color: #5F7C9C;
@@ -344,14 +378,28 @@ footer {
     margin-bottom: 20px; }
 
 @media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.4em; }
+  h2 {
+    font-size: 2em; }
+  h3 {
+    font-size: 1.44em; }
+  h4 {
+    font-size: 1.12em; }
+  h5 {
+    font-size: 1em; }
+  h6 {
+    font-size: .8em; }
   .main-nav {
     display: none; }
   .small-nav {
     display: flex;
     height: 90px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; }
+    .small-nav .spacer {
+      padding: 35px; }
     .small-nav .bars {
       padding: 35px; }
   .hero-container {
@@ -364,11 +412,14 @@ footer {
       width: 100%; }
     .hero-container .hero-content {
       padding: 5%;
-      width: 60%; }
+      width: 60%;
+      min-height: 400px; }
   .contact-us form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%; }
     .contact-us form #first-name, .contact-us form #last-name, .contact-us form #tel, .contact-us form #email, .contact-us form #textarea {
-      width: 100%; } }
+      width: 100%; }
+    .contact-us form #submit {
+      width: 140px; } }

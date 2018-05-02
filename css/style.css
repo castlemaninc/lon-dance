@@ -256,6 +256,18 @@ section {
   padding-right: 2%; }
   .about-us .section-heading {
     text-align: center; }
+  .about-us .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .about-us .owner-photos #owner1, .about-us .owner-photos #owner2 {
+    margin: 0px 10px; }
+  .about-us .about-description {
+    line-height: 1.3em; }
   .about-us .instructor-card {
     background: #fff;
     width: 200px;

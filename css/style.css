@@ -266,6 +266,7 @@ section {
       padding-bottom: 10%;
       line-height: 1.5em; }
   .about-us .instructor-name {
+    color: #244276;
     text-transform: uppercase;
     padding: 8px 0px;
     font-family: "Open Sans", sans-serif;

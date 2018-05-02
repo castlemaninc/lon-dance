@@ -385,10 +385,14 @@ section {
 	}
 }
 
-.address {	
+.address {
 
 	address .directions {
 		font-style: italic;
+	}
+
+	.phone {
+		color: $blue1;
 	}
 }
 

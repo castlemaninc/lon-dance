@@ -382,6 +382,9 @@ section {
 .address address .directions {
   font-style: italic; }
 
+.address .phone {
+  color: #244276; }
+
 footer {
   background-color: #5F7C9C;
   padding: 80px; }

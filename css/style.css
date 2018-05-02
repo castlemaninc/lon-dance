@@ -102,6 +102,12 @@ footer {
 .small-nav {
   justify-content: space-around; }
 
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 @media only screen and (min-device-width: 768px) {
   .small-device-nav-link {
     display: block; } }
@@ -200,7 +206,7 @@ nav li {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 90% 1fr;
   margin-top: 130px;
-  padding: 5%; }
+  padding: 2%; }
 
 .hero-content {
   text-align: center;
@@ -347,7 +353,7 @@ section {
     grid-column-end: 3;
     margin-top: 10px;
     width: 100%;
-    padding: 10px; }
+    padding: 0; }
   .contact-us form #submit {
     margin-top: 15px;
     width: 100px;
@@ -376,6 +382,9 @@ footer {
     font-family: "Lora", serif;
     text-align: center;
     margin-bottom: 20px; }
+
+.copyright {
+  height: 60px; }
 
 @media only screen and (max-width: 1024px) {
   h1 {
@@ -421,5 +430,7 @@ footer {
     width: 50%; }
     .contact-us form #first-name, .contact-us form #last-name, .contact-us form #tel, .contact-us form #email, .contact-us form #textarea {
       width: 100%; }
+    .contact-us form #textarea {
+      padding: 10px; }
     .contact-us form #submit {
       width: 140px; } }

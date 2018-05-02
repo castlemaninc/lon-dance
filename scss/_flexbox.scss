@@ -42,7 +42,6 @@
 }
 
 
-
 .location {
 	display: flex;
 	flex-direction: column;
@@ -54,7 +53,6 @@
 		align-items: center;
 	}
 }
-
 
 footer {
 	display: flex;
@@ -74,5 +72,10 @@ footer {
 	justify-content: space-around;
 }
 
-
+.copyright {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;		
+}
 

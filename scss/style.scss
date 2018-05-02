@@ -54,7 +54,6 @@ ul {
 
 	&:hover {
 		background-color: $red1;
-
 	}
 
 	&:active {
@@ -120,7 +119,7 @@ nav li {
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 90% 1fr;
 	margin-top: 130px;	
-	padding: 5%;    
+	padding: 2%;    
 }
 
 .hero-content {
@@ -205,7 +204,6 @@ section {
 		
 		background: #fff;
 
-
 		width: 200px;
 		margin: 15px;
 
@@ -215,7 +213,6 @@ section {
 			padding-bottom: 10%;
 			line-height: 1.5em;
 		}
-
 	}
 
 	.instructor-name {
@@ -349,8 +346,7 @@ section {
 			grid-column-end: 3;
 			margin-top: 10px;
 			width: 100%;
-			padding: 10px;
-
+			padding: 0;
 		}
 
 		#submit {
@@ -382,7 +378,7 @@ section {
 footer {
 	
 	background-color: $blue2;
-	padding: 80px;
+	padding: 80px;	
 
 	a {
 		color: white;
@@ -403,6 +399,10 @@ footer {
 		margin-bottom: 20px;
 	}
 	
+}
+
+.copyright {
+	height: 60px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -460,6 +460,10 @@ footer {
 
     	#first-name, #last-name, #tel, #email, #textarea {
     		width: 100%;
+    	}
+
+    	#textarea {
+    		padding: 10px;
     	}
 
     	#submit {

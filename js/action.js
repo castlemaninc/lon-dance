@@ -8,4 +8,12 @@ $(document).ready(function(){
 			$('.main-header').css('box-shadow', 'none');
 		}
 	});
+
+	$('.main-nav a').click(function(e){
+		console.log('clicked');
+		e.preventDefault();
+		$('body,html').animate({scrollTop: $(this.hash).offset().top -130}, 500);	
+		
+		
+	});
 });

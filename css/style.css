@@ -184,6 +184,21 @@ p {
 .small-device-nav-link {
   display: none; }
 
+.small-device-nav-links {
+  position: relative;
+  top: 130px;
+  padding-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #BF0426; }
+  .small-device-nav-links li {
+    padding: 2%;
+    border-bottom: 1px solid #eee; }
+    .small-device-nav-links li:hover {
+      background-color: #BF0426;
+      color: white; }
+
 nav li {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
@@ -450,3 +465,19 @@ footer {
       padding: 10px; }
     .contact-us form #submit {
       width: 140px; } }
+
+@media only screen and (max-width: 768px) {
+  .instructors-container {
+    justify-content: center; }
+  .about-us .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.5fr;
+    grid-row-gap: 10px;
+    line-height: 1.5em; }
+    .about-us .about-grid .owner-photos {
+      display: flex;
+      justify-content: space-around; }
+  .services .services-card {
+    max-width: 100%; }
+  .contact-us form {
+    width: 80%; } }

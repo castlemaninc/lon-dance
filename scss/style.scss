@@ -2,6 +2,9 @@
 @import 'flexbox';
 @import 'media-queries';
 
+@-ms-viewport{
+  width: device-width;
+}
 
 $Lora: 'Lora', serif;
 $Os: 'Open Sans', sans-serif;
@@ -18,7 +21,7 @@ $white1: #F2F2F2;
 	text-decoration: none;
 }
 
-body {
+body {	
 	background-color: #fff;
 }
 
@@ -62,7 +65,7 @@ ul {
 	}
 }
 
-.wrapper {
+.wrapper {	
 	position: relative;
 }
 
@@ -532,7 +535,7 @@ footer {
 		justify-content: center;
 	}
 
-	.about-us .about-grid {
+	/*.about-us .about-grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 2.5fr;
 		grid-row-gap: 10px;
@@ -542,7 +545,7 @@ footer {
 			display: flex;
 			justify-content: space-around;
 		}
-	}
+	}*/
 
 	.services {
 		.services-card {

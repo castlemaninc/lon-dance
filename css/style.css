@@ -180,6 +180,8 @@ p {
 
 .small-nav {
   display: none; }
+  .small-nav .close-x {
+    display: none; }
 
 .small-device-nav-link {
   display: none; }
@@ -191,7 +193,8 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #BF0426; }
+  color: #BF0426;
+  display: none; }
   .small-device-nav-links li {
     padding: 2%;
     border-bottom: 1px solid #eee; }
@@ -440,7 +443,7 @@ footer {
     align-items: center; }
     .small-nav .spacer {
       padding: 35px; }
-    .small-nav .bars {
+    .small-nav .bars, .small-nav .close-x {
       padding: 35px; }
   .hero-container {
     display: flex;

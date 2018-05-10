@@ -88,7 +88,12 @@ p {
 
 .small-nav {
 	display: none;
+
+	.close-x {
+		display: none;
+	}
 }
+
 
 .small-device-nav-link {
 	display: none;
@@ -102,7 +107,8 @@ p {
 	font-family: $Os;
 	font-weight: 700;
 	text-align: center;
-	color: $red1;	
+	color: $red1;
+	display: none;		
 
 	li {
 		padding: 2%;
@@ -303,7 +309,6 @@ section {
 		text-align: center;
 		font-family: $Os;
 		line-height: 1.5em;
-
 	}
 	
 }
@@ -477,7 +482,7 @@ footer {
     		padding: 35px;
     	}
 
-    	.bars {    		
+    	.bars, .close-x {    		
     		padding: 35px;
     	}
     }

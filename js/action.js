@@ -19,7 +19,7 @@ $(document).ready(function(){
 		}, 500);		
 	});
 
-	$('.hero-content a').click(function(e){
+	$('.hero-content a, .down-arrow-container a').click(function(e){
 		console.log('.hero-content a clicked');
 		e.preventDefault();
 		$('body,html').animate({

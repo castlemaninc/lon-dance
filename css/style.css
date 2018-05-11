@@ -493,17 +493,24 @@ footer {
 @media only screen and (max-width: 768px) {
   .instructors-container {
     justify-content: center; }
-  /*.about-us .about-grid {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2.5fr;
-		grid-row-gap: 10px;
-		line-height: 1.5em;
-
-		.owner-photos {
-			display: flex;
-			justify-content: space-around;
-		}
-	}*/
+  .hours {
+    padding: 12px; }
+  .about-us {
+    display: flex;
+    flex-direction: column; }
+  .about-grid {
+    display: none; }
+  .about-us .about-grid {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em; }
+    .about-us .about-grid .owner-photos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .about-us .about-grid .owner-photos #owner2 {
+        margin-top: 10px; }
   .services .services-card {
     max-width: 100%; }
   .contact-us form {

@@ -570,17 +570,36 @@ footer {
 		justify-content: center;
 	}
 
-	/*.about-us .about-grid {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2.5fr;
-		grid-row-gap: 10px;
+	.hours {
+		padding: 12px;
+	}
+
+	.about-us {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-grid {
+		display: none;
+	}
+
+	.about-us .about-grid {
+		display: flex;
+		flex-direction: column;
+		
 		line-height: 1.5em;
 
 		.owner-photos {
 			display: flex;
-			justify-content: space-around;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;			
+
+			#owner2 {
+				margin-top: 10px;
+			}
 		}
-	}*/
+	}
 
 	.services {
 		.services-card {

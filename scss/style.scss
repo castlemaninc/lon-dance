@@ -15,6 +15,8 @@ $red2: #E0142F;
 $blue1: #244276;
 $blue2: #5F7C9C;
 $white1: #F2F2F2;
+$mikeyellow: #FFFF66;
+$mikeblue: #012169;
 
 
 * {
@@ -86,7 +88,9 @@ p {
 }
 
 .main-nav {
-	height: 130px;	
+	background-color: #012169;
+	height: 130px;
+
 }
 
 .small-nav {
@@ -97,7 +101,6 @@ p {
 	}
 }
 
-
 .small-device-nav-link {
 	display: none;
 }
@@ -105,12 +108,12 @@ p {
 .small-device-nav-links {
 	
 	position: relative;
-	top: 130px;
+	top: 90px;
 	padding-top: 0;
 	font-family: $Os;
 	font-weight: 700;
 	text-align: center;
-	color: $red1;
+	color: $red2;
 	display: none;		
 
 	li {
@@ -118,11 +121,10 @@ p {
 		border-bottom: 1px solid #eee;
 
 		&:hover {
-			background-color: $red1;
-			color: white;
+			background-color: $mikeblue;
+			color: $mikeyellow;
 		}
 	}
-
 }
 
 
@@ -131,11 +133,11 @@ nav li {
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 5px 20px;
-	color: $red1;
+	color: #FFFF66;
 
 	&:hover{
-		background-color: $red2;
-		color: white;
+		background-color: $mikeyellow;
+		color: $mikeblue;
 	}
 }
 
@@ -146,6 +148,7 @@ nav li {
 	font-family: $Lora;
 	text-align: center;
 }
+
 
 .hero-container {
 	display:grid;	
@@ -158,20 +161,14 @@ nav li {
 .hero-content {
 	text-align: center;
 	line-height: 2em;	
-	font-family: $Os;
-
-	span {
-		text-decoration: underline;
-		color: $blue1;
-
-	}
+	font-family: $Os;	
 
 	.phone {
 		color: $blue1;
 	}
 
 	.thirty {
-		font-style: italic;
+		/*font-style: italic;*/
 	}
 
 	.free {
@@ -470,6 +467,11 @@ footer {
 	h5 { font-size: 1em; }
 	h6 { font-size: .8em; }
 
+	section {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
     .main-nav {
     	display: none;
     }
@@ -480,6 +482,8 @@ footer {
     	flex-direction: row;
     	justify-content: space-between;
     	align-items: center;
+    	background-color: $mikeblue;
+    	color: $mikeyellow;
 
     	.spacer {
     		padding: 35px;
@@ -487,6 +491,11 @@ footer {
 
     	.bars, .close-x {    		
     		padding: 35px;
+    	}
+
+    	&:hover {
+    		background-color: $mikeblue;
+    		color: $mikeyellow;
     	}
     }
 

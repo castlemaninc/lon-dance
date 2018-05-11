@@ -14,6 +14,7 @@ $red1: #BF0426;
 $red2: #E0142F;
 $blue1: #244276;
 $blue2: #5F7C9C;
+$blue2b: #7e96af;
 $white1: #F2F2F2;
 $mikeyellow: #FFFF66;
 $mikeblue: #012169;
@@ -69,6 +70,7 @@ ul {
 
 .wrapper {	
 	position: relative;
+	background-color: $blue2;
 }
 
 .sticky {
@@ -88,7 +90,7 @@ p {
 }
 
 .main-nav {
-	background-color: #012169;
+	background-color: $blue2;
 	height: 130px;
 
 }
@@ -113,15 +115,16 @@ p {
 	font-family: $Os;
 	font-weight: 700;
 	text-align: center;
-	color: $red2;
+	background-color: white;
+	color: $blue1;
 	display: none;		
 
 	li {
 		padding: 2%;
-		border-bottom: 1px solid #eee;
+		/*border-bottom: 1px solid $blue1;*/
 
 		&:hover {
-			background-color: $mikeblue;
+			background-color: $blue2;
 			color: $mikeyellow;
 		}
 	}
@@ -150,7 +153,7 @@ nav li {
 }
 
 
-.hero-container {
+.hero-container {	
 	display:grid;	
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 90% 1fr;
@@ -296,7 +299,7 @@ section {
 	}
 
 	.learn-more {
-		color: $red1;
+		color: $mikeyellow;
 		font-weight: 700;
 	}
 }
@@ -314,7 +317,7 @@ section {
 }
 
 .contact-us, .location {
-	background-image: url(../images/agsquare/agsquare.png);
+	background-image: url(../images/light_grey/light_grey.png);
 }
 
 .location {
@@ -344,6 +347,7 @@ section {
 
 .hours {
 	
+	background-color: white;
 	line-height: 1.4em;	
 	
 	table {
@@ -428,11 +432,16 @@ section {
 
 footer {
 	
-	background-color: $blue2;
+	background-color: $blue1;
+
 	padding: 80px;	
 
 	a {
-		color: white;
+		color: $blue2;
+
+		&:hover {
+			color: $blue2b;
+		}
 	}
 
 	.footer-content {
@@ -482,7 +491,7 @@ footer {
     	flex-direction: row;
     	justify-content: space-between;
     	align-items: center;
-    	background-color: $mikeblue;
+    	background-color: $blue2;
     	color: $mikeyellow;
 
     	.spacer {
@@ -493,10 +502,16 @@ footer {
     		padding: 35px;
     	}
 
-    	&:hover {
-    		background-color: $mikeblue;
-    		color: $mikeyellow;
+    	li {
+
+    		&:hover {
+	    		background-color: $mikeblue;
+	    		color: $mikeyellow;
+    		}
+
     	}
+
+    	
     }
 
     .hero-container {

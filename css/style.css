@@ -164,7 +164,8 @@ ul {
     box-shadow: none; }
 
 .wrapper {
-  position: relative; }
+  position: relative;
+  background-color: #5F7C9C; }
 
 .sticky {
   position: fixed;
@@ -179,7 +180,7 @@ p {
   z-index: 2; }
 
 .main-nav {
-  background-color: #012169;
+  background-color: #5F7C9C;
   height: 130px; }
 
 .small-nav {
@@ -197,13 +198,14 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #E0142F;
+  background-color: white;
+  color: #244276;
   display: none; }
   .small-device-nav-links li {
     padding: 2%;
-    border-bottom: 1px solid #eee; }
+    /*border-bottom: 1px solid $blue1;*/ }
     .small-device-nav-links li:hover {
-      background-color: #012169;
+      background-color: #5F7C9C;
       color: #FFFF66; }
 
 nav li {
@@ -323,7 +325,7 @@ section {
   line-height: 1.5em; }
 
 .services .learn-more {
-  color: #BF0426;
+  color: #FFFF66;
   font-weight: 700; }
 
 .studio-rental {
@@ -334,7 +336,7 @@ section {
     line-height: 1.5em; }
 
 .contact-us, .location {
-  background-image: url(../images/agsquare/agsquare.png); }
+  background-image: url(../images/light_grey/light_grey.png); }
 
 .location .map {
   background-color: white;
@@ -352,6 +354,7 @@ section {
     font-size: 1.1em; }
 
 .hours {
+  background-color: white;
   line-height: 1.4em; }
   .hours table {
     font-size: 1.2em;
@@ -405,10 +408,12 @@ section {
   color: #244276; }
 
 footer {
-  background-color: #5F7C9C;
+  background-color: #244276;
   padding: 80px; }
   footer a {
-    color: white; }
+    color: #5F7C9C; }
+    footer a:hover {
+      color: #7e96af; }
   footer .footer-content {
     min-width: 40%; }
     footer .footer-content .social-wrapper {
@@ -445,13 +450,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #012169;
+    background-color: #5F7C9C;
     color: #FFFF66; }
     .small-nav .spacer {
       padding: 35px; }
     .small-nav .bars, .small-nav .close-x {
       padding: 35px; }
-    .small-nav:hover {
+    .small-nav li:hover {
       background-color: #012169;
       color: #FFFF66; }
   .hero-container {

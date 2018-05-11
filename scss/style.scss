@@ -13,6 +13,7 @@ $shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $red1: #BF0426;
 $red2: #E0142F;
 $blue1: #244276;
+$blue1b: #2d5394;
 $blue2: #5F7C9C;
 $blue2b: #7e96af;
 $white1: #F2F2F2;
@@ -90,9 +91,8 @@ p {
 }
 
 .main-nav {
-	background-color: $blue2;
+	background-color: $blue1;
 	height: 130px;
-
 }
 
 .small-nav {
@@ -220,7 +220,6 @@ section {
 	}	
 }
 
-
 .about-us {
 
 	background: linear-gradient(#ddd, 30%, #fff);
@@ -286,6 +285,11 @@ section {
 		min-width: 200px;		
 		text-align: center;
 
+		img {
+			width: 50px;
+			height: auto;
+		}
+
 		.service-heading {
 			text-transform: uppercase;
 			padding: 8px 0px;
@@ -299,14 +303,21 @@ section {
 	}
 
 	.learn-more {
-		color: $mikeyellow;
+		color: $blue1;
 		font-weight: 700;
+
+		&:hover {
+			color: $blue2b;
+		}
 	}
 }
 
 .studio-rental {
-
 	background-color: $red1;
+
+	.section-heading {
+		color: white;
+	}
 
 	.studio-rental-reasons {
 		text-align: center;
@@ -491,7 +502,7 @@ footer {
     	flex-direction: row;
     	justify-content: space-between;
     	align-items: center;
-    	background-color: $blue2;
+    	background-color: $blue1;
     	color: $mikeyellow;
 
     	.spacer {

@@ -180,7 +180,7 @@ p {
   z-index: 2; }
 
 .main-nav {
-  background-color: #5F7C9C;
+  background-color: #244276;
   height: 130px; }
 
 .small-nav {
@@ -315,6 +315,9 @@ section {
   max-width: 200px;
   min-width: 200px;
   text-align: center; }
+  .services .services-card img {
+    width: 50px;
+    height: auto; }
   .services .services-card .service-heading {
     text-transform: uppercase;
     padding: 8px 0px;
@@ -325,11 +328,15 @@ section {
   line-height: 1.5em; }
 
 .services .learn-more {
-  color: #FFFF66;
+  color: #244276;
   font-weight: 700; }
+  .services .learn-more:hover {
+    color: #7e96af; }
 
 .studio-rental {
   background-color: #BF0426; }
+  .studio-rental .section-heading {
+    color: white; }
   .studio-rental .studio-rental-reasons {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -450,7 +457,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #5F7C9C;
+    background-color: #244276;
     color: #FFFF66; }
     .small-nav .spacer {
       padding: 35px; }

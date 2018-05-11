@@ -39,7 +39,7 @@ $(document).ready(function(){
 		
 		e.preventDefault();
 		$('body,html').animate({
-			scrollTop: $(this.hash).offset().top -430
+			scrollTop: $(this.hash).offset().top -390
 		}, 500);
 
 		$('.small-device-nav-links').slideUp(500);
